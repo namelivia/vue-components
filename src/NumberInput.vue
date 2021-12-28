@@ -9,10 +9,11 @@
       :name="id"
       :required="required"
       :placeholder="placeholder"
-      :value="value"
+      :value="amount"
+      :min="min"
+      :step="step"
       @input="onInput"
       type="number"
-      min="1"
     />
   </div>
 </template>
@@ -31,8 +32,14 @@ export default {
     label: {
       type: String,
     },
-    value: {
+    amount:: {
       type: Number,
+    },
+    min: {
+      type: String,
+    },
+    step: {
+      type: String,
     },
   },
   methods: {

@@ -11,6 +11,7 @@ import { default as CardBody } from './CardBody.vue'
 import { default as Selector } from './Selector.vue'
 import { default as TextInput } from './TextInput.vue'
 import { default as NumberInput } from './NumberInput.vue'
+import { default as NumberInput } from './NumberInput.vue'
 import { default as ImageInput } from './ImageInput.vue'
 import { default as CardGrid } from './CardGrid.vue'
 import { default as Navbar } from './Navbar.vue'
@@ -27,6 +28,7 @@ export {
   CardBody,
   Selector,
   TextInput,
+  NumberInput,
   NumberInput,
   ImageInput,
   CardGrid,
