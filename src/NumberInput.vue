@@ -32,7 +32,7 @@ export default {
     label: {
       type: String,
     },
-    amount:: {
+    amount: {
       type: Number,
     },
     min: {

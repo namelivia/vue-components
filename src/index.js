@@ -12,7 +12,6 @@ import { default as Selector } from './Selector.vue'
 import { default as TextInput } from './TextInput.vue'
 import { default as CheckBoxInput } from './CheckBoxInput.vue'
 import { default as NumberInput } from './NumberInput.vue'
-import { default as NumberInput } from './NumberInput.vue'
 import { default as ImageInput } from './ImageInput.vue'
 import { default as CardGrid } from './CardGrid.vue'
 import { default as Navbar } from './Navbar.vue'
@@ -30,7 +29,6 @@ export {
   Selector,
   TextInput,
   CheckBoxInput,
-  NumberInput,
   NumberInput,
   ImageInput,
   CardGrid,
