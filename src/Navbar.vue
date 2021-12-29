@@ -3,13 +3,13 @@
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <mobile-menu-button />
+          <mobile-menu-button @click="onMobileMenuClick" :open="mobileMenuOpen"/>
         </div>
         <div
           class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
         >
           <navbar-title />
-          <navigation-links :links="links" />
+          <navigation-links :links="links"/>
         </div>
         <right-content
           :locale="locale"
@@ -17,7 +17,7 @@
         />
       </div>
     </div>
-    <mobile-navigation-links :links="links" />
+    <mobile-navigation-links :links="links" :open="mobileMenuOpen" />
   </nav>
 </template>
 <script>
@@ -35,6 +35,11 @@ export default {
     RightContent: RightContent,
     MobileMenuButton: MobileMenuButton,
   },
+  data() {
+    return {
+      mobileMenuOpen: false,
+    }
+  },
   props: {
     links: {
       type: Array,
@@ -46,5 +51,10 @@ export default {
       type: String,
     },
   },
+  methods: {
+    onMobileMenuClick() {
+      this.mobileMenuOpen = !this.mobileMenuOpen
+    },
+  }
 }
 </script>
