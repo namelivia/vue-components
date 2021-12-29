@@ -10,6 +10,7 @@ import { default as CardImage } from './CardImage.vue'
 import { default as CardBody } from './CardBody.vue'
 import { default as Selector } from './Selector.vue'
 import { default as TextInput } from './TextInput.vue'
+import { default as CheckBoxInput } from './CheckBoxInput.vue'
 import { default as NumberInput } from './NumberInput.vue'
 import { default as NumberInput } from './NumberInput.vue'
 import { default as ImageInput } from './ImageInput.vue'
@@ -28,6 +29,7 @@ export {
   CardBody,
   Selector,
   TextInput,
+  CheckBoxInput,
   NumberInput,
   NumberInput,
   ImageInput,
