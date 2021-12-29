@@ -14,6 +14,7 @@ import { default as CheckBoxInput } from './CheckBoxInput.vue'
 import { default as NumberInput } from './NumberInput.vue'
 import { default as ImageInput } from './ImageInput.vue'
 import { default as CardGrid } from './CardGrid.vue'
+import { default as Container } from './Container.vue'
 import { default as Navbar } from './Navbar.vue'
 export {
   SectionTitle,
@@ -32,5 +33,6 @@ export {
   NumberInput,
   ImageInput,
   CardGrid,
+  Container,
   Navbar
 }
