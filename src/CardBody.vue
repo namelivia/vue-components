@@ -1,16 +1,17 @@
-<template>
-  <div class="px-6 py-4">
-    <div class="font-bold text-xl mb-2">{{ title }}</div>
-    <p class="text-gray-700 text-base">
-      <slot></slot>
-    </p>
-  </div>
+<template lang="pug">
+.px-6.py-4
+  div.font-bold.text-xl.mb-2
+    | {{ title }}
+  p text-gray-700.text-base
+    slot
 </template>
 
 <script lang="js">
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: "CardBody",
   props: {
     title: String,
   },
-}
+})
 </script>
