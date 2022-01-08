@@ -33,6 +33,7 @@ export default defineComponent({
       type: Boolean,
     },
   },
+  emits: ['update'],
   methods: {
     onInput(event) {
       this.$emit('update', event.target.value)

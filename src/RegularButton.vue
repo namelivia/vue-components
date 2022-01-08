@@ -9,6 +9,7 @@ export default defineComponent({
   props: {
     text: String,
   },
+  emits: ['click'],
   methods: {
     onClick(evt) {
       this.$emit('click', evt)

@@ -39,6 +39,7 @@ export default defineComponent({
       type: Object,
     }
   },
+  emits: ['update'],
   methods: {
     onInput(event) {
       this.$emit('update', event.target.files[0])

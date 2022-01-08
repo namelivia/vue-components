@@ -20,6 +20,7 @@ export default defineComponent({
       return this.$refs.image.clientWidth
     },
   },
+  emits: ['width'],
   mounted: function () {
     this.$emit('width', this.calculateWidth())
   },

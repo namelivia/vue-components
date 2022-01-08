@@ -48,6 +48,7 @@ export default defineComponent({
       selected: '',
     }
   },
+  emits: ['selected'],
   methods: {
     onChange() {
       this.$emit('selected', this.selected)

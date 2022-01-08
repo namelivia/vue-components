@@ -28,6 +28,7 @@ export default defineComponent({
       default: false
     },
   },
+  emits: ['click'],
   methods: {
     onClick(evt) {
       this.$emit('click', evt)

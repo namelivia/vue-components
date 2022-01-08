@@ -42,6 +42,7 @@ export default defineComponent({
       type: String,
     },
   },
+  emits: ['update'],
   methods: {
     onInput(event) {
       this.$emit('update', event.target.value)
