@@ -1,24 +1,24 @@
-<template>
-  <div class="mb-4">
-    <label class="block text-gray-700 text-sm font-bold mb-2" :for="id">
-      {{ label }}
-    </label>
-    <input
-      class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-      :id="id"
-      :name="id"
-      :required="required"
-      :placeholder="placeholder"
-      :value="amount"
-      :min="min"
-      :step="step"
-      @input="onInput"
-      type="number"
-    />
-  </div>
+<template lang="pug">
+div(class="mb-4")
+  label(class="block text-gray-700 text-sm font-bold mb-2" :for="id")
+    | {{ label }}
+  input(
+    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    :id="id"
+    :name="id"
+    :required="required"
+    :placeholder="placeholder"
+    :value="amount"
+    :min="min"
+    :step="step"
+    @input="onInput"
+    type="number"
+  )
 </template>
-<script>
-export default {
+<script lang="js">
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: "NumberInput",
   props: {
     id: {
       type: String,
@@ -42,11 +42,12 @@ export default {
       type: String,
     },
   },
+  emits: ['update'],
   methods: {
     onInput(event) {
       this.$emit('update', event.target.value)
     },
   },
 
-}
+})
 </script>

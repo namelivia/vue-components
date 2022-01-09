@@ -1,17 +1,16 @@
-<template>
-  <div class="flex justify-between mt-4">
-    <a :href="previousLink" v-if='showPrevious'>
-      <regular-button :text="previousLabel" />
-    </a>
-    <a :href="nextLink">
-      <regular-button :text="nextLabel" />
-    </a>
-  </div>
+<template lang="pug">
+div(class="flex justify-between mt-4")
+  a(:href="previousLink" v-if='showPrevious')
+    regular-button(:text="previousLabel")
+  a(:href="nextLink")
+    regular-button(:text="nextLabel")
 </template>
 
 <script lang="js">
 import { default as RegularButton } from './RegularButton.vue'
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: "Pagination",
   props: {
     previousLabel: String,
     nextLabel: String,
@@ -22,5 +21,5 @@ export default {
   components: {
     RegularButton: RegularButton
   }
-}
+})
 </script>

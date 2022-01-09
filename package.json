@@ -1,29 +1,21 @@
 {
   "name": "@namelivia/vue-components",
-  "version": "0.1.10",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
     "build": "rollup -c"
   },
   "peerDependencies": {
-    "vue": "^2.6.14",
-    "vue-class-component": "^7.2.6",
-    "vue-property-decorator": "^9.1.2",
-    "vue-template-compiler": "^2.6.14"
+    "vue": "^3.0.0-beta.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.1.1",
-    "@vue/compiler-sfc": "^3.2.26",
     "pug": "^3.0.2",
     "rollup": "^2.62.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue2": "^0.8.1",
-    "vue": "^2.6.14",
-    "vue-class-component": "^7.2.6",
-    "vue-property-decorator": "^9.1.2",
-    "vue-pug-plugin": "^1.0.16",
-    "vue-template-compiler": "^2.6.14"
+    "rollup-plugin-vue": "^6.0.0",
+    "vue": "^3.0.0-beta.1"
   }
 }

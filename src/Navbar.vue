@@ -1,33 +1,30 @@
-<template>
-  <nav class="bg-gray-800">
-    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-      <div class="relative flex items-center justify-between h-16">
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-          <mobile-menu-button @click="onMobileMenuClick" :open="mobileMenuOpen"/>
-        </div>
-        <div
-          class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
-        >
-          <navbar-title />
-          <navigation-links :links="links"/>
-        </div>
-        <right-content
-          :locale="locale"
-          :current-user-email="currentUserEmail"
-        />
-      </div>
-    </div>
-    <mobile-navigation-links :links="links" :open="mobileMenuOpen" />
-  </nav>
+<template lang="pug">
+nav(class="bg-gray-800")
+  div(class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8")
+    div(class="relative flex items-center justify-between h-16")
+      div(class="absolute inset-y-0 left-0 flex items-center sm:hidden")
+        mobile-menu-button(@click="onMobileMenuClick" :open="mobileMenuOpen")
+      div(
+        class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+      )
+        navbar-title
+        navigation-links(:links="links")
+      right-content(
+        :locale="locale"
+        :current-user-email="currentUserEmail"
+      )
+  mobile-navigation-links(:links="links" :open="mobileMenuOpen")
 </template>
-<script>
+<script lang="js">
 import MobileNavigationLinks from './MobileNavigationLinks.vue'
 import NavigationLinks from './NavigationLinks.vue'
 import NavbarTitle from './NavbarTitle.vue'
 import RightContent from './RightContent.vue'
 import MobileMenuButton from './MobileMenuButton.vue'
 
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent({
+  name: "Navbar",
   components: {
     NavbarTitle: NavbarTitle,
     NavigationLinks: NavigationLinks,
@@ -56,5 +53,5 @@ export default {
       this.mobileMenuOpen = !this.mobileMenuOpen
     },
   }
-}
+})
 </script>
