@@ -2,7 +2,7 @@
 .px-6.py-4
   div.font-bold.text-xl.mb-2
     | {{ title }}
-  p text-gray-700.text-base
+  p.text-gray-700.text-base
     slot
 </template>
 
