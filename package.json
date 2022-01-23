@@ -1,6 +1,6 @@
 {
   "name": "@namelivia/vue-components",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
@@ -17,5 +17,8 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-vue": "^6.0.0",
     "vue": "^3.0.0-beta.1"
+  },
+  "dependencies": {
+    "image-blob-reduce": "^4.1.0"
   }
 }
