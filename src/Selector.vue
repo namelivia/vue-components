@@ -39,6 +39,9 @@ export default defineComponent({
     label: {
       type: String,
     },
+    initialValue: {
+      type: String,
+    },
     options: {
       type: Array,
     },
@@ -47,6 +50,16 @@ export default defineComponent({
     return {
       selected: '',
     }
+  },
+  watch: {
+    initialValue: {
+      immediate: true,
+      handler: function (newSelectedValue) {
+        if (newSelectedValue !== "" && newSelectedValue !== undefined) {
+          this.selected = newSelectedValue
+        }
+      },
+    },
   },
   emits: ['selected'],
   methods: {
