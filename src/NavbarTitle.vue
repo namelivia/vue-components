@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class="flex-shrink-0 flex items-center")
+a(:href="href" class="flex-shrink-0 flex items-center")
   img(
     class="block lg:hidden h-8 w-auto"
     src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
@@ -14,6 +14,11 @@ div(class="flex-shrink-0 flex items-center")
 <script lang="js">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "NavbarTitle"
+  name: "NavbarTitle",
+  props: {
+    href: {
+      type: String,
+    },
+  }
 })
 </script>

@@ -7,7 +7,7 @@ nav(class="bg-gray-800")
       div(
         class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
       )
-        navbar-title
+        navbar-title(href="/")
         navigation-links(:links="links")
       right-content(
         :locale="locale"
