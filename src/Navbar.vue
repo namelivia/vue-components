@@ -7,7 +7,7 @@ nav(class="bg-gray-800")
       div(
         class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
       )
-        navbar-title(href="/")
+        navbar-title(href="/" :title="title" :imageBig="imageBig" :imageSmall="imageSmall")
         navigation-links(:links="links")
       right-content(
         :locale="locale"
@@ -45,6 +45,15 @@ export default defineComponent({
       type: String,
     },
     currentUserEmail: {
+      type: String,
+    },
+    title: {
+      type: String,
+    },
+    imageBig: {
+      type: String,
+    },
+    imageSmall: {
       type: String,
     },
   },
