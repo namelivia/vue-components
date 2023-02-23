@@ -12,6 +12,8 @@ nav(class="bg-gray-800")
       right-content(
         :locale="locale"
         :current-user-email="currentUserEmail"
+        :current-user-name="currentUserName"
+        :current-user-picture="currentUserPicture"
       )
   mobile-navigation-links(:links="links" :open="mobileMenuOpen")
 </template>
@@ -45,6 +47,12 @@ export default defineComponent({
       type: String,
     },
     currentUserEmail: {
+      type: String,
+    },
+    currentUserName: {
+      type: String,
+    },
+    currentUserPicture: {
       type: String,
     },
     title: {

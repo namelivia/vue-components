@@ -6,6 +6,10 @@ div(
     | {{ $i18n.locale }}
   span(class="bg-gray-800 p-1 text-gray-400")
     | {{ currentUserEmail }}
+  span(class="bg-gray-800 p-1 text-gray-400")
+    | {{ currentUserName }}
+  span(class="bg-gray-800 p-1 text-gray-400")
+    | {{ currentUserPicture }}
 </template>
 <script lang="js">
 import { defineComponent } from 'vue'
@@ -16,6 +20,12 @@ export default defineComponent({
       type: String,
     },
     currentUserEmail: {
+      type: String,
+    },
+    currentUserName: {
+      type: String,
+    },
+    currentUserPicture: {
       type: String,
     },
   },
