@@ -8,8 +8,10 @@ div(
     | {{ currentUserEmail }}
   span(class="bg-gray-800 p-1 text-gray-400")
     | {{ currentUserName }}
-  span(class="bg-gray-800 p-1 text-gray-400")
-    | {{ currentUserPicture }}
+  img(
+    :src="currentUserPicture"
+    :alt="currentUserName"
+  )
 </template>
 <script lang="js">
 import { defineComponent } from 'vue'
