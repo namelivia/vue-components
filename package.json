@@ -10,7 +10,7 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-commonjs": "^25.0.5",
     "@rollup/plugin-node-resolve": "^15.2.1",
     "pug": "^3.0.2",
     "rollup": "^4.0.2",
