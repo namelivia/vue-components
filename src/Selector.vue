@@ -67,8 +67,11 @@ export default defineComponent({
     options: {
       immediate: true,
       handler: function (newOptions) {
-        if (newOptions.length === 1) {
-          this.selected = newOptions[0].value;
+        console.log(newOptions)
+        const enabledOptions = newOptions.filter((option) => !option.disabled)
+        console.log(enabledOptions)
+        if (enabledOptions.length === 1) {
+          this.selected = enabledOptions[0].value;
         }
       },
     },
