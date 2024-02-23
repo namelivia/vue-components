@@ -67,9 +67,7 @@ export default defineComponent({
     options: {
       immediate: true,
       handler: function (newOptions) {
-        console.log(newOptions)
         const enabledOptions = newOptions.filter((option) => !option.disabled)
-        console.log(enabledOptions)
         if (enabledOptions.length === 1) {
           this.selected = enabledOptions[0].value;
         }
