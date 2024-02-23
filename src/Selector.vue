@@ -64,6 +64,14 @@ export default defineComponent({
         }
       },
     },
+    options: {
+      immediate: true,
+      handler: function (newOptions) {
+        if (newOptions.length === 1) {
+          this.selected = newOptions[0].value;
+        }
+      },
+    },
   },
   emits: ['selected'],
   methods: {
