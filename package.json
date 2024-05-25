@@ -12,7 +12,7 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.8",
     "@rollup/plugin-node-resolve": "^15.2.3",
-    "pug": "^3.0.2",
+    "pug": "^3.0.3",
     "rollup": "^4.17.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-vue": "^6.0.0",
