@@ -7,7 +7,7 @@
     "build": "rollup -c --bundleConfigAsCjs"
   },
   "peerDependencies": {
-    "vue": "^3.5.5"
+    "vue": "^3.5.7"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^26.0.1",
@@ -16,7 +16,7 @@
     "rollup": "^4.21.3",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-vue": "^6.0.0",
-    "vue": "^3.5.5"
+    "vue": "^3.5.7"
   },
   "dependencies": {
     "image-blob-reduce": "^4.1.0"
