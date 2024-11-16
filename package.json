@@ -8,7 +8,7 @@
     "cypress": "cypress open --component testing"
   },
   "peerDependencies": {
-    "vue": "^3.5.12"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.1",
@@ -20,7 +20,7 @@
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-vue": "^6.0.0",
     "vite": "^5.4.10",
-    "vue": "^3.5.12"
+    "vue": "^3.5.13"
   },
   "dependencies": {
     "image-blob-reduce": "^4.1.0"
