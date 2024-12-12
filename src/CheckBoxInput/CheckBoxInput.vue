@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class="mb-4")
+div(class="checkbox-container")
   input(
     :id="id"
     :name="id"
@@ -9,11 +9,11 @@ div(class="mb-4")
     type="checkbox"
     unchecked-value="false"
   )
-  //TODO: This seems not to work
-  //label(class="block text-gray-700 text-sm font-bold" :for="id") {{ label }}
+  label(class="checkbox-label" :for="id") {{ label }}
 </template>
+
 <script lang="js">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 export default defineComponent({
   name: "CheckBoxInput",
   props: {
@@ -36,8 +36,25 @@ export default defineComponent({
   emits: ['update'],
   methods: {
     onInput(event) {
-      this.$emit('update', event.target.value)
+      this.$emit('update', event.target.value);
     },
   },
-})
+});
 </script>
+
+<style scoped>
+.checkbox-container {
+  margin-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.checkbox-label {
+  display: block;
+  color: #4a5568;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+</style>

@@ -1,11 +1,10 @@
 <template lang="pug">
-.px-6.py-4
-  div.font-bold.text-xl.mb-2
+div(class="card-body")
+  div(class="card-title")
     | {{ title }}
-  p.text-gray-700.text-base
+  p(class="card-text")
     slot
 </template>
-
 <script lang="js">
 import { defineComponent } from 'vue'
 export default defineComponent({
@@ -15,3 +14,20 @@ export default defineComponent({
   },
 })
 </script>
+<style scoped>
+.card-body {
+  padding: 1.5rem 1.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #4a5568;
+  font-size: 1rem;
+}
+</style>
+

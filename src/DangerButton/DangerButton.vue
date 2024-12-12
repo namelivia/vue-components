@@ -1,10 +1,10 @@
 <template lang="pug">
-button(v-on:click="onClick" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded")
+button(v-on:click="onClick" class="danger-button")
   | {{text}}
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 export default defineComponent({
   name: "DangerButton",
   props: {
@@ -13,8 +13,25 @@ export default defineComponent({
   emits: ['click'],
   methods: {
     onClick(evt) {
-      this.$emit('click', evt)
-    }
-  }
-})
+      this.$emit('click', evt);
+    },
+  },
+});
 </script>
+
+<style scoped>
+.danger-button {
+  background-color: #ef4444;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.danger-button:hover {
+  background-color: #b91c1c;
+}
+</style>
