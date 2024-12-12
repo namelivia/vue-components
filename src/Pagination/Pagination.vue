@@ -7,7 +7,7 @@ div(class="flex justify-between mt-4")
 </template>
 
 <script lang="js">
-import { default as RegularButton } from './RegularButton.vue'
+import { default as RegularButton } from '../RegularButton/RegularButton.vue'
 import { defineComponent } from 'vue'
 export default defineComponent({
   name: "Pagination",
