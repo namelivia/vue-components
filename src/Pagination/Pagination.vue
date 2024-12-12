@@ -1,14 +1,14 @@
 <template lang="pug">
-div(class="flex justify-between mt-4")
-  a(:href="previousLink" v-if='showPrevious')
+div(class="pagination-container")
+  a(:href="previousLink" v-if="showPrevious")
     regular-button(:text="previousLabel")
   a(:href="nextLink")
     regular-button(:text="nextLabel")
 </template>
 
 <script lang="js">
-import { default as RegularButton } from '../RegularButton/RegularButton.vue'
-import { defineComponent } from 'vue'
+import { default as RegularButton } from '../RegularButton/RegularButton.vue';
+import { defineComponent } from 'vue';
 export default defineComponent({
   name: "Pagination",
   props: {
@@ -19,7 +19,19 @@ export default defineComponent({
     nextLink: String,
   },
   components: {
-    RegularButton: RegularButton
-  }
-})
+    RegularButton,
+  },
+});
 </script>
+
+<style scoped>
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+</style>
