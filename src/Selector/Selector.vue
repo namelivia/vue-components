@@ -122,7 +122,7 @@ export default defineComponent({
 .selector-icon-container {
   pointer-events: none;
   position: absolute;
-  inset-y: 0;
+  inset: 0 auto;
   right: 0;
   display: flex;
   align-items: center;
