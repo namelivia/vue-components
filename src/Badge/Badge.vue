@@ -1,5 +1,5 @@
 <template lang="pug">
-span(class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 inline-block")
+span(class="badge")
   | {{text}}
 </template>
 <script lang="js">
@@ -11,3 +11,20 @@ export default defineComponent({
   },
 })
 </script>
+<style scoped>
+.badge {
+  background-color: #bfdbfe;
+  color: #1e3a8a;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  padding: 0.125rem 0.625rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+.dark .badge {
+  background-color: #e0f2fe;
+  color: #1e3a8a;
+}
+</style>
