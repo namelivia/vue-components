@@ -1,11 +1,11 @@
 <template lang="pug">
 button(
   type="button"
-  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+  class="menu-button"
   v-on:click="onClick"
 )
   svg(
-    class="block h-6 w-6"
+    class="menu-icon"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -18,21 +18,54 @@ button(
       d="M4 6h16M4 12h16M4 18h16"
     )
 </template>
+
 <script lang="js">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 export default defineComponent({
   name: "MobileMenuButton",
   props: {
     open: {
       type: Boolean,
-      default: false
+      default: false,
     },
   },
   emits: ['click'],
   methods: {
     onClick(evt) {
-      this.$emit('click', evt)
-    }
-  }
-})
+      this.$emit('click', evt);
+    },
+  },
+});
 </script>
+
+<style scoped>
+.menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  color: #9ca3af;
+  background-color: transparent;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  color: #ffffff;
+  background-color: #374151;
+}
+
+.menu-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+
+.menu-icon {
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+</style>
+

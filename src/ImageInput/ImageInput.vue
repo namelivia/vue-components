@@ -1,9 +1,9 @@
 <template lang="pug">
-div(class="mb-4")
-  label(class="block text-gray-700 text-sm font-bold mb-2" :for="id")
+div(class="image-input-container")
+  label(class="image-input-label" :for="id")
     | {{ label }}
   input(
-    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    class="image-input-field"
     :id="id"
     :name="id"
     :required="required"
@@ -15,8 +15,9 @@ div(class="mb-4")
     accept="image/*"
   )
 </template>
+
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 export default defineComponent({
   name: "ImageInput",
   props: {
@@ -37,13 +38,45 @@ export default defineComponent({
     },
     file: {
       type: Object,
-    }
+    },
   },
   emits: ['update'],
   methods: {
     onInput(event) {
-      this.$emit('update', event.target.files[0])
+      this.$emit('update', event.target.files[0]);
     },
   },
-})
+});
 </script>
+
+<style scoped>
+.image-input-container {
+  margin-bottom: 1rem;
+}
+
+.image-input-label {
+  display: block;
+  color: #4a5568;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.image-input-field {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  appearance: none;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  color: #4a5568;
+  line-height: 1.25;
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.image-input-field:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: #3182ce;
+}
+</style>

@@ -1,13 +1,14 @@
 <template lang="pug">
-div(class="bg-slate-800 bg-opacity-50 flex justify-center items-center absolute top-0 right-0 bottom-0 left-0" v-if="open")
-  div(class="bg-white px-16 py-14 rounded-md text-center")
-    h1(class="text-xl mb-4 font-bold text-slate-500")
+div(class="modal-overlay" v-if="open")
+  div(class="modal-container")
+    h1(class="modal-title")
       | Are you sure?
     secondary-button(@click="onCancel" text="No")
     danger-button.ml-2(@click="onConfirm" text="Yes")
 </template>
+
 <script lang="js">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 export default defineComponent({
   name: "Modal",
   emits: ['cancel', 'confirm'],
@@ -16,11 +17,39 @@ export default defineComponent({
   },
   methods: {
     onCancel(evt) {
-      this.$emit('cancel', evt)
+      this.$emit('cancel', evt);
     },
     onConfirm(evt) {
-      this.$emit('confirm', evt)
+      this.$emit('confirm', evt);
     },
-  }
-})
+  },
+});
 </script>
+
+<style scoped>
+.modal-overlay {
+  background-color: rgba(30, 41, 59, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal-container {
+  background-color: #ffffff;
+  padding: 3.5rem 4rem;
+  border-radius: 0.375rem;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #64748b;
+}
+</style>
