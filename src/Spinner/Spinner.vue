@@ -1,12 +1,45 @@
 <template lang="pug">
-div(class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status")
-    span(class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]")
+div(class="spinner" role="status")
+    span(class="sr-only-text")
      | Please wait...
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 export default defineComponent({
   name: "Spinner",
-})
+});
 </script>
+
+<style scoped>
+.spinner {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  border: 4px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+.sr-only-text {
+  position: absolute;
+  margin: -1px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>

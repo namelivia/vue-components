@@ -1,10 +1,18 @@
 <template lang="pug">
-table(class="w-full border-collapse")
+table(class="styled-table")
   slot
 </template>
+
 <script lang="js">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 export default defineComponent({
-  name: "StyledTable"
-})
+  name: "StyledTable",
+});
 </script>
+
+<style scoped>
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+</style>

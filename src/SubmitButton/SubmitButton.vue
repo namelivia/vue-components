@@ -1,14 +1,14 @@
 <template lang="pug">
 button(
     type="submit"
-    class="bg-blue-500 hover:bg-blue-700 disabled:bg-blue-400 text-white font-bold py-2 px-4 rounded disabled:cursor-not-allowed"
+    class="submit-button"
     :disabled="disabled"
 )
   | {{text}}
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 export default defineComponent({
   name: "SubmitButton",
   props: {
@@ -19,5 +19,27 @@ export default defineComponent({
         type: Boolean,
     },
   },
-})
+});
 </script>
+
+<style scoped>
+.submit-button {
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #2563eb;
+}
+
+.submit-button:disabled {
+  background-color: #60a5fa;
+  cursor: not-allowed;
+}
+</style>
