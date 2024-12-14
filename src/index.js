@@ -22,4 +22,4 @@ export { default as ResizeImageUpload } from './ResizeImageUpload/ResizeImageUpl
 export { default as Badge } from './Badge/Badge.vue'
 export { default as Modal } from './Modal/Modal.vue'
 export { default as Spinner } from './Spinner/Spinner.vue'
-export { default as RangeEditor } from './RangeEditor/RangeEditor.vue'
+export { default as RangeView } from './RangeView/RangeView.vue'
