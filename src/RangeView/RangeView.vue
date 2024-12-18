@@ -1,7 +1,9 @@
 <template lang="pug">
 div.ranges-editor
     div.range(v-for="range in ranges" :key="range.id")
-        span {{range.start}}-{{range.end}}
+        div.labels
+            span.label {{ range.start }}
+            span.label {{ range.end }}
         div.gap
         span.label {{ range.label }}
 </template>
@@ -27,6 +29,12 @@ export default defineComponent({
     text-align: center;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+}
+.labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .gap {
     height: 10px;
