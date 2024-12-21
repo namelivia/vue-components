@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.2",
-    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-node-resolve": "^16.0.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "cypress": "^13.17.0",
     "pug": "^3.0.3",
