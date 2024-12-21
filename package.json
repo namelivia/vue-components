@@ -16,7 +16,7 @@
     "@vitejs/plugin-vue": "^5.2.1",
     "cypress": "^13.16.1",
     "pug": "^3.0.3",
-    "rollup": "^4.28.1",
+    "rollup": "^4.29.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-vue": "^6.0.0",
