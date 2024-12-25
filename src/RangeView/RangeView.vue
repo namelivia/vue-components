@@ -1,9 +1,8 @@
 <template lang="pug">
 div.ranges-editor
-    div.range(v-for="range in ranges" :key="range.id")
+    div.range(v-for="range,index in ranges" :key="range.id")
         div.labels
-            span.label {{ range.start }}
-            span.label {{ range.end }}
+            span.label {{ index < ranges.length - 1 ? range.max : '&nbsp;' }}
         div.gap
         span.label {{ range.label }}
 </template>
@@ -34,7 +33,7 @@ export default defineComponent({
 .labels {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .gap {
     height: 10px;
