@@ -14,7 +14,7 @@
     "@rollup/plugin-commonjs": "^28.0.3",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@vitejs/plugin-vue": "^5.2.3",
-    "cypress": "^14.2.0",
+    "cypress": "^14.2.1",
     "pug": "^3.0.3",
     "rollup": "^4.38.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
