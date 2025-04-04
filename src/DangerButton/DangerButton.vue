@@ -21,7 +21,7 @@ export default defineComponent({
 
 <style scoped>
 .danger-button {
-  background-color: #ef4444;
+  background-color: var(--color-danger);
   color: #ffffff;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -32,6 +32,6 @@ export default defineComponent({
 }
 
 .danger-button:hover {
-  background-color: #b91c1c;
+  background-color: var(--color-danger-dark);
 }
 </style>
