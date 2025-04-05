@@ -32,6 +32,6 @@ export default defineComponent({
 }
 
 .danger-button:hover {
-  background-color: var(--color-danger-dark);
+  background-color: var(--color-danger-hover);
 }
 </style>
