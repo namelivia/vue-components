@@ -1,4 +1,7 @@
 :root {
   --color-danger: #ef4444;
   --color-danger-hover: #b91c1c;
+  --color-submit: #3b82f6;
+  --color-submit-hover: #2563eb;
+  --color-submit-disabled: #60a5fa;
 }
