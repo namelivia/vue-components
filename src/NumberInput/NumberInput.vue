@@ -88,7 +88,7 @@ export default defineComponent({
 }
 
 .number-input-field:disabled {
-  background-color: #e5e7eb;
+  background-color: var(--color-input-disabled);
   cursor: not-allowed;
 }
 </style>
