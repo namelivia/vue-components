@@ -13,7 +13,7 @@ export default defineComponent({
 </script>
 <style scoped>
 .badge {
-  background-color: #bfdbfe;
+  background-color: var(--color-badge);
   color: #1e3a8a;
   font-size: 0.75rem;
   font-weight: 600;
@@ -24,7 +24,7 @@ export default defineComponent({
 }
 
 .dark .badge {
-  background-color: #e0f2fe;
+  background-color: var(--color-badge-dark);
   color: #1e3a8a;
 }
 </style>
