@@ -92,7 +92,7 @@ image-input input[type="file"]:focus {
 }
 
 image-input input[type="file"]:disabled {
-  background-color: #e5e7eb;
+  background-color: var(--color-input-disabled);
   cursor: not-allowed;
 }
 </style>

@@ -24,7 +24,7 @@ export default defineComponent({
 
 <style scoped>
 .submit-button {
-  background-color: #3b82f6;
+  background-color: var(--color-submit);
   color: #ffffff;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -35,11 +35,11 @@ export default defineComponent({
 }
 
 .submit-button:hover {
-  background-color: #2563eb;
+  background-color: var(--color-submit-hover);
 }
 
 .submit-button:disabled {
-  background-color: #60a5fa;
+  background-color: var(--color-submit-disabled);
   cursor: not-allowed;
 }
 </style>
