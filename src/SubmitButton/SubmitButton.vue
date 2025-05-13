@@ -25,7 +25,7 @@ export default defineComponent({
 <style scoped>
 .submit-button {
   background-color: var(--color-submit);
-  color: #ffffff;
+  color: var(--color-submit-text);
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
