@@ -56,7 +56,7 @@ export default defineComponent({
 
 .image-input-label {
   display: block;
-  color: #4a5568;
+  color: var(--color-image-input-label);
   font-size: 0.875rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -65,7 +65,7 @@ export default defineComponent({
 .image-input-field {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   appearance: none;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--color-image-input-border);
   border-radius: 0.25rem;
   width: 100%;
   padding: 0.5rem 0.75rem;
@@ -77,6 +77,6 @@ export default defineComponent({
 .image-input-field:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-  border-color: #3182ce;
+  border-color: var(--color-image-input-border-focused);
 }
 </style>

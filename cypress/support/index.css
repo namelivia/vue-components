@@ -1,10 +1,40 @@
 :root {
+  /* BUTTONS */
+  /* Danger */
   --color-danger: #ef4444;
   --color-danger-hover: #b91c1c;
+  /* Submit */
   --color-submit: #3b82f6;
+  --color-submit-text: #ffffff;
   --color-submit-hover: #2563eb;
   --color-submit-disabled: #60a5fa;
+  /* Reset */
+  --color-reset: #ef4444;
+  --color-reset-text: #ffffff;
+  --color-reset-hover: #b91c1c;
+  /* SELECTOR */
+  --color-selector-label: #4a5568;
+  --color-selector-text: #4a5568;
+  --color-selector-background: #e5e7eb;
+  --color-selector-border: #e5e7eb;
+  --color-selector-border-focused: #e5e7eb;
+  --color-selector-background-focused: #ffffff;
+  --color-selector-border-focused: #a0aec0;
+  --color-selector-icon-container: #4a5568;
+  /* BADGE */
   --color-badge: #bfdbfe;
+  --color-badge-text: #1e3a8a;
   --color-badge-dark: #e0f2fe;
+  --color-badge-dark-text: #1e3a8a;
+  /* CARD */
+  --color-card-text: #4a5568;
+  /* INPUT */
   --color-input-disabled: #e5e7eb;
+  --color-image-input-label: #4a5568;
+  --color-image-input-border: #d1d5db;
+  --color-image-input-border-focused: #3182ce;
+  /* MODAL */
+  --color-modal-title: #64478b;
+  --color-modal-background: #ffffff;
+  --color-modal-overlay: rgba(30, 41, 59, 0.5);
 }

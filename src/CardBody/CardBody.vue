@@ -26,7 +26,7 @@ export default defineComponent({
 }
 
 .card-text {
-  color: #4a5568;
+  color: var(--color-card-text);
   font-size: 1rem;
 }
 </style>

@@ -15,8 +15,8 @@ export default defineComponent({
 
 <style scoped>
 .reset-button {
-  background-color: #ef4444;
-  color: #ffffff;
+  background-color: var(--color-reset);
+  color: var(--color-reset-text);
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -26,6 +26,6 @@ export default defineComponent({
 }
 
 .reset-button:hover {
-  background-color: #b91c1c;
+  background-color: var(--color-reset-hover);
 }
 </style>

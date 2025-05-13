@@ -28,7 +28,7 @@ export default defineComponent({
 
 <style scoped>
 .modal-overlay {
-  background-color: rgba(30, 41, 59, 0.5);
+  background-color: var(--color-modal-overlay);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@ export default defineComponent({
 }
 
 .modal-container {
-  background-color: #ffffff;
+  background-color: var(--color-modal-background);
   padding: 3.5rem 4rem;
   border-radius: 0.375rem;
   text-align: center;
@@ -50,6 +50,6 @@ export default defineComponent({
   font-size: 1.25rem;
   margin-bottom: 1rem;
   font-weight: bold;
-  color: #64748b;
+  color: var(--color-modal-title);
 }
 </style>
