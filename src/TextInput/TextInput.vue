@@ -55,28 +55,28 @@ export default defineComponent({
 
 .text-input-label {
   display: block;
-  color: #4a5568;
+  color: var(--color-text-input-label);
   font-size: 0.875rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
 
 .text-input-field {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px var(--color-text-input-shadow);
   appearance: none;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--color-text-input-border);
   border-radius: 0.25rem;
   width: 100%;
   padding: 0.5rem 0.75rem;
-  color: #4a5568;
+  color: var(--color-text-input);
   line-height: 1.25;
   transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 .text-input-field:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
-  border-color: #3182ce;
+  box-shadow: 0 0 0 3px var(--color-text-input-shadow);
+  border-color: var(--color-text-input-border-focus);
 }
 
 .text-input-field:disabled {

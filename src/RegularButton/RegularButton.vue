@@ -21,8 +21,8 @@ export default defineComponent({
 
 <style scoped>
 .regular-button {
-  background-color: #3b82f6;
-  color: #ffffff;
+  background-color: var(--color-regular);
+  color: var(--color-regular-text);
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -32,7 +32,7 @@ export default defineComponent({
 }
 
 .regular-button:hover {
-  background-color: #2563eb;
+  background-color: var(--color-regular-hover);
 }
 </style>
 

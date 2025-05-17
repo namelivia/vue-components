@@ -39,15 +39,15 @@ export default defineComponent({
 }
 
 .loading-ball.blue {
-  background-color: #60a5fa;
+  background-color: var(--color-loading-ball-blue);
 }
 
 .loading-ball.green {
-  background-color: #34d399;
+  background-color: var(--color-loading-ball-green);
 }
 
 .loading-ball.red {
-  background-color: #f87171;
+  background-color: var(--color-loading-ball-red);
 }
 
 @keyframes bounce {
