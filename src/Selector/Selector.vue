@@ -90,7 +90,7 @@ export default defineComponent({
 
 .selector-label {
   display: block;
-  color: #4a5568;
+  color: var(--color-selector-label);
   font-size: 0.875rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -103,9 +103,9 @@ export default defineComponent({
 .selector-field {
   appearance: none;
   width: 100%;
-  background-color: #e5e7eb;
-  border: 1px solid #e5e7eb;
-  color: #4a5568;
+  background-color: var(--color-selector-background);
+  border: 1px solid var(--color-selector-border);
+  color: var(--color-selector-text);
   padding: 0.75rem 1rem 0.75rem 0.75rem;
   padding-right: 2rem;
   border-radius: 0.25rem;
@@ -115,8 +115,8 @@ export default defineComponent({
 
 .selector-field:focus {
   outline: none;
-  background-color: #ffffff;
-  border-color: #a0aec0;
+  background-color: var(--color-selector-background-focused);
+  border-color: var(--color-selector-border-focused);
 }
 
 .selector-icon-container {
@@ -127,7 +127,7 @@ export default defineComponent({
   display: flex;
   align-items: center;
   padding: 0 0.5rem;
-  color: #4a5568;
+  color: var(--color-selector-icon-container);
 }
 
 .selector-icon {

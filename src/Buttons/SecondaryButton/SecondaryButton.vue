@@ -1,12 +1,12 @@
 <template lang="pug">
-button(v-on:click="onClick" class="danger-button")
+button(v-on:click="onClick" class="secondary-button")
   | {{text}}
 </template>
 
 <script lang="js">
 import { defineComponent } from 'vue';
 export default defineComponent({
-  name: "DangerButton",
+  name: "SecondaryButton",
   props: {
     text: String,
   },
@@ -20,9 +20,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.danger-button {
-  background-color: #ef4444;
-  color: #ffffff;
+.secondary-button {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-text);
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -31,7 +31,7 @@ export default defineComponent({
   transition: background-color 0.2s ease-in-out;
 }
 
-.danger-button:hover {
-  background-color: #b91c1c;
+.secondary-button:hover {
+  background-color: var(--color-secondary-hover);
 }
 </style>

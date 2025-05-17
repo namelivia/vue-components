@@ -1,22 +1,28 @@
 <template lang="pug">
-button(type="reset" class="reset-button")
+button(v-on:click="onClick" class="regular-button")
   | {{text}}
 </template>
 
 <script lang="js">
 import { defineComponent } from 'vue';
 export default defineComponent({
-  name: "ResetButton",
+  name: "RegularButton",
   props: {
     text: String,
+  },
+  emits: ['click'],
+  methods: {
+    onClick(evt) {
+      this.$emit('click', evt);
+    },
   },
 });
 </script>
 
 <style scoped>
-.reset-button {
-  background-color: #ef4444;
-  color: #ffffff;
+.regular-button {
+  background-color: var(--color-regular);
+  color: var(--color-regular-text);
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -25,7 +31,8 @@ export default defineComponent({
   transition: background-color 0.2s ease-in-out;
 }
 
-.reset-button:hover {
-  background-color: #b91c1c;
+.regular-button:hover {
+  background-color: var(--color-regular-hover);
 }
 </style>
+

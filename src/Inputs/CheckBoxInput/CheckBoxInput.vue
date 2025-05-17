@@ -53,7 +53,7 @@ input[type="checkbox"] {
 
 .checkbox-label {
   display: block;
-  color: #4a5568;
+  color: var(--color-checkbox-label);
   font-size: 0.875rem;
   font-weight: bold;
 }
