@@ -21,8 +21,8 @@ export default defineComponent({
 
 <style scoped>
 .secondary-button {
-  background-color: #6b7280;
-  color: #ffffff;
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-text);
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
@@ -32,6 +32,6 @@ export default defineComponent({
 }
 
 .secondary-button:hover {
-  background-color: #374151;
+  background-color: var(--color-secondary-hover);
 }
 </style>

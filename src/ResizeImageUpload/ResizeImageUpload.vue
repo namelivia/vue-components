@@ -71,24 +71,24 @@ image-input label {
   margin-bottom: 0.5rem;
   font-weight: bold;
   font-size: 0.875rem;
-  color: #4a5568;
+  color: var(--color-image-input);
 }
 
 image-input input[type="file"] {
   display: block;
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--color-image-input-border);
   border-radius: 0.25rem;
-  color: #4a5568;
-  background-color: #ffffff;
+  color: var(--color-image-input);
+  background-color: var(--color-image-input-background);
   cursor: pointer;
 }
 
 image-input input[type="file"]:focus {
   outline: none;
-  border-color: #3182ce;
-  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+  border-color: var(--color-image-input-border-focus);
+  box-shadow: 0 0 0 3px var(--color-image-input-shadow);
 }
 
 image-input input[type="file"]:disabled {
