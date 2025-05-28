@@ -18,6 +18,6 @@ export default defineComponent({
   max-width: 24rem;
   border-radius: 0.375rem;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--color-card-shadow);
 }
 </style>
