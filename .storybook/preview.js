@@ -1,4 +1,5 @@
 /** @type { import('@storybook/vue3').Preview } */
+import '../styles/index.css';
 const preview = {
   parameters: {
     controls: {

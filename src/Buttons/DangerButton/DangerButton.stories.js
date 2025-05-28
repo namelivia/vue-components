@@ -7,6 +7,6 @@ export default {
 }
 export const Default = {
   args: {
-    text: 'Regular Button',
+    text: 'Danger Button',
   },
 };
