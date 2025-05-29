@@ -6,8 +6,8 @@ div(v-if="!dismissed" class="card-container")
     slot
 </template>
 <script lang="js">
-import { default as CardImage } from './CardImage/CardImage.vue'
-import { default as CardBody } from './CardBody/CardBody.vue'
+import { default as CardImage } from './CardImage.vue'
+import { default as CardBody } from './CardBody.vue'
 import { defineComponent } from 'vue'
 export default defineComponent({
   name: "Card",
