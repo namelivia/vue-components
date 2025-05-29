@@ -17,9 +17,7 @@ export const Default = {
     },
     template: `
       <Card v-bind="args">
-        <template #default>
-          <p>This is the content of the card.</p>
-        </template>
+        <p>This is the content of the card.</p>
       </Card>
     `,
   }),
