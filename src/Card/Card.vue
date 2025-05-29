@@ -1,7 +1,7 @@
 <template lang="pug">
 div(v-if="!dismissed" class="card-container")
   div(class="card")
-  card-image(:src="image" :alt="title")
+  card-image(:src="image" :alt="title" @width="$emit('width', $event)")
   card-body(:title="title")
     slot
 </template>
@@ -23,6 +23,7 @@ export default defineComponent({
     CardImage,
     CardBody,
   },
+  emits: ['width']
 })
 </script>
 <style scoped>
