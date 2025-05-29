@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class="card-container")
+div(v-if="!dismissed" class="card-container")
   div(class="card")
   card-image(:src="image" :alt="title")
   card-body(:title="title")
@@ -14,6 +14,10 @@ export default defineComponent({
   props: {
     image: String,
     title: String,
+    dismissed: {
+      type: Boolean,
+      default: false,
+    },
   },
   components: {
     CardImage,

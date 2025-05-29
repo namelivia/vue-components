@@ -9,6 +9,7 @@ export const Default = {
   args: {
     title: 'Card Title',
     image: 'https://picsum.photos/640/480',
+    dismissed: false,
   },
   render: (args) => ({
     components: { Card },
