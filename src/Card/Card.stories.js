@@ -7,5 +7,20 @@ export default {
 }
 export const Default = {
   args: {
+    title: 'Card Title',
+    image: 'https://picsum.photos/640/480',
   },
+  render: (args) => ({
+    components: { Card },
+    setup() {
+      return { args };
+    },
+    template: `
+      <Card v-bind="args">
+        <template #default>
+          <p>This is the content of the card.</p>
+        </template>
+      </Card>
+    `,
+  }),
 };
