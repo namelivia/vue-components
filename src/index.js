@@ -1,8 +1,6 @@
 export { default as SectionTitle } from './SectionTitle/SectionTitle.vue'
 export { default as Loading } from './Loading/Loading.vue'
 export { default as Card } from './Card/Card.vue'
-export { default as CardImage } from './CardImage/CardImage.vue'
-export { default as CardBody } from './CardBody/CardBody.vue'
 export { default as CardGrid } from './CardGrid/CardGrid.vue'
 export { default as Container } from './Container/Container.vue'
 export { default as Navbar } from './Navbar/Navbar.vue'

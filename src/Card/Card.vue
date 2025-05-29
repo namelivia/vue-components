@@ -1,12 +1,28 @@
 <template lang="pug">
-div(class="card-container")
+div(v-if="!dismissed" class="card-container")
   div(class="card")
+  card-image(:src="image" :alt="title")
+  card-body(:title="title")
     slot
 </template>
 <script lang="js">
+import { default as CardImage } from './CardImage.vue'
+import { default as CardBody } from './CardBody.vue'
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Card"
+  name: "Card",
+  props: {
+    image: String,
+    title: String,
+    dismissed: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  components: {
+    CardImage,
+    CardBody,
+  },
 })
 </script>
 <style scoped>
