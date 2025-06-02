@@ -1,9 +1,9 @@
 <template lang="pug">
 div(v-if="!dismissed" class="card-container")
   div(class="card")
-  card-image(:src="image" :alt="title" @width="$emit('width', $event)")
-  card-body(:title="title")
-    slot
+      card-image(:src="image" :alt="title" @width="$emit('width', $event)")
+      card-body(:title="title")
+        slot
 </template>
 <script lang="js">
 import { default as CardImage } from './CardImage.vue'
