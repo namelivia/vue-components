@@ -15,8 +15,8 @@ export default defineComponent({
 .badge {
   background-color: var(--color-badge);
   color: var(--color-badge-text);
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
   margin-right: 0.5rem;
   padding: 0.125rem 0.625rem;
   border-radius: 0.25rem;

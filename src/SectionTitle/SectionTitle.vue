@@ -18,7 +18,7 @@ export default defineComponent({
 <style scoped>
 .section-title {
   text-align: center;
-  font-size: 3.75rem;
+  font-size: var(--font-size-xlarge);
   line-height: 1.5;
 }
 </style>

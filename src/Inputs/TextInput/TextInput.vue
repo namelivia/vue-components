@@ -56,8 +56,8 @@ export default defineComponent({
 .text-input-label {
   display: block;
   color: var(--color-text-input-label);
-  font-size: 0.875rem;
-  font-weight: bold;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
   margin-bottom: 0.5rem;
 }
 

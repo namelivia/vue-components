@@ -20,7 +20,7 @@ export default defineComponent({
 <style scoped>
 .loading-text {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: var(--font-size-large);
   line-height: 1.75rem;
 }
 

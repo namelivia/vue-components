@@ -23,7 +23,7 @@ export default defineComponent({
 .regular-button {
   background-color: var(--color-regular);
   color: var(--color-regular-text);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   border: none;

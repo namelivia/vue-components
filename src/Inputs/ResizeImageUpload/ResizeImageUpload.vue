@@ -69,8 +69,8 @@ image-input {
 image-input label {
   display: block;
   margin-bottom: 0.5rem;
-  font-weight: bold;
-  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-small);
   color: var(--color-image-input);
 }
 

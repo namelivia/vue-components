@@ -47,9 +47,9 @@ export default defineComponent({
 }
 
 .modal-title {
-  font-size: 1.25rem;
+  font-size: var(--font-size-large);
   margin-bottom: 1rem;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   color: var(--color-modal-title);
 }
 </style>

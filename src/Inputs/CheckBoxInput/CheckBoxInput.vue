@@ -54,7 +54,7 @@ input[type="checkbox"] {
 .checkbox-label {
   display: block;
   color: var(--color-checkbox-label);
-  font-size: 0.875rem;
-  font-weight: bold;
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
 }
 </style>

@@ -17,7 +17,7 @@ export default defineComponent({
 .reset-button {
   background-color: var(--color-reset);
   color: var(--color-reset-text);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   border: none;

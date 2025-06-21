@@ -23,7 +23,7 @@ export default defineComponent({
 .danger-button {
   background-color: var(--color-danger);
   color: var(--color-danger-text);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   border: none;

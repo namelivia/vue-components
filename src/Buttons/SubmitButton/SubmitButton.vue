@@ -26,7 +26,7 @@ export default defineComponent({
 .submit-button {
   background-color: var(--color-submit);
   color: var(--color-submit-text);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   padding: 0.5rem 1rem;
   border-radius: 0.25rem;
   border: none;

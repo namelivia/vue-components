@@ -20,14 +20,14 @@ export default defineComponent({
 }
 
 .card-title {
-  font-weight: bold;
-  font-size: 1.25rem;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-large);
   margin-bottom: 0.5rem;
 }
 
 .card-text {
   color: var(--color-card-text);
-  font-size: 1rem;
+  font-size: var(--font-size-base);
 }
 </style>
 
