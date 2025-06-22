@@ -18,7 +18,7 @@ export default defineComponent({
   width: 2rem;
   border: 4px solid currentColor;
   border-right-color: transparent;
-  border-radius: 50%;
+  border-radius: var(--border-radius-round);
   animation: spin 1.5s linear infinite;
 }
 
