@@ -86,4 +86,6 @@
   --badge-margin-right: 0.5rem;
   --badge-padding: 0.125rem 0.625rem;
   --badge-border-radius: 0.25rem;
+  /* BORDER-RADIUS */ 
+  --border-radius-base: 0.25rem;
 }

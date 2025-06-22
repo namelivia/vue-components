@@ -28,7 +28,7 @@ export default defineComponent({
   color: var(--color-submit-text);
   font-weight: var(--font-weight-bold);
   padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+  border-radius: var(--border-radius-base);
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
