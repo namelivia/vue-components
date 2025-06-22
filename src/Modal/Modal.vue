@@ -42,7 +42,7 @@ export default defineComponent({
 .modal-container {
   background-color: var(--color-modal-background);
   padding: 3.5rem 4rem;
-  border-radius: 0.375rem;
+  border-radius: var(--border-radius-big);
   text-align: center;
 }
 

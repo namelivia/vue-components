@@ -44,7 +44,7 @@ export default defineComponent({
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  border-radius: 0.375rem;
+  border-radius: var(--border-radius-big);
   color: var(--color-menu-button);
   background-color: transparent;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;

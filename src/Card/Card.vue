@@ -33,7 +33,7 @@ export default defineComponent({
 
 .card {
   max-width: 24rem;
-  border-radius: 0.375rem;
+  border-radius: var(--border-radius-big);
   overflow: hidden;
   box-shadow: 0 4px 6px var(--color-card-shadow);
 }
