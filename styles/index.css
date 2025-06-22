@@ -86,6 +86,12 @@
   --badge-margin-right: 0.5rem;
   --badge-padding: 0.125rem 0.625rem;
   --badge-border-radius: 0.25rem;
+  --card-margin: 2rem;
+  --card-max-witdh: 24rem;
+  --card-body-padding: 1.5rem 1.5rem;
+  --card-title-margin-bottom: 0.5rem;
+  /* SHADOWS */
+  --card-shadow: 0 4px 6px var(--color-card-shadow);
   /* BORDER-RADIUS */ 
   --border-radius-base: 0.25rem;
   --border-radius-big: 0.25rem;

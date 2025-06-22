@@ -16,13 +16,13 @@ export default defineComponent({
 </script>
 <style scoped>
 .card-body {
-  padding: 1.5rem 1.5rem;
+  padding: var(--card-body-padding);
 }
 
 .card-title {
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-large);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--card-title-margin-bottom);
 }
 
 .card-text {

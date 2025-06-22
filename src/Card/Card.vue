@@ -28,13 +28,13 @@ export default defineComponent({
 </script>
 <style scoped>
 .card-container {
-  margin: 2rem;
+  margin: var(--card-margin);
 }
 
 .card {
-  max-width: 24rem;
+  max-width: var(--card-max-width);
   border-radius: var(--border-radius-big);
   overflow: hidden;
-  box-shadow: 0 4px 6px var(--color-card-shadow);
+  box-shadow: var(--card-shadow);
 }
 </style>
