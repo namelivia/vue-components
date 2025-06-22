@@ -17,9 +17,9 @@ export default defineComponent({
   color: var(--color-badge-text);
   font-size: var(--font-size-small);
   font-weight: var(--font-weight-bold);
-  margin-right: 0.5rem;
-  padding: 0.125rem 0.625rem;
-  border-radius: 0.25rem;
+  margin-right: var(--badge-margin-right);
+  padding: var(--badge-padding);
+  border-radius: var(--badge-border-radius);
   display: inline-block;
 }
 
