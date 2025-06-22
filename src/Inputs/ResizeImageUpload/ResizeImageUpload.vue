@@ -79,7 +79,7 @@ image-input input[type="file"] {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid var(--color-image-input-border);
-  border-radius: 0.25rem;
+  border-radius: var(--border-radius--base);
   color: var(--color-image-input);
   background-color: var(--color-image-input-background);
   cursor: pointer;

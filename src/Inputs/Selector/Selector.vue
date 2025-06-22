@@ -108,7 +108,7 @@ export default defineComponent({
   color: var(--color-selector-text);
   padding: 0.75rem 1rem 0.75rem 0.75rem;
   padding-right: 2rem;
-  border-radius: 0.25rem;
+  border-radius: var(--border-radius--base);
   line-height: 1.25;
   transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }

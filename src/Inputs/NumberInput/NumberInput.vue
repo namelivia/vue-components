@@ -73,7 +73,7 @@ export default defineComponent({
   box-shadow: 0 1px 3px var(--color-input-shadow);
   appearance: none;
   border: 1px solid var(--color-number-input-border);
-  border-radius: 0.25rem;
+  border-radius: var(--border-radius--base);
   width: 100%;
   padding: 0.5rem 0.75rem;
   color: var(--color-number-input);
