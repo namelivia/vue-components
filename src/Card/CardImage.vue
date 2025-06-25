@@ -1,5 +1,5 @@
 <template lang="pug">
-img(class="w-full" :src="src" :alt="alt" ref="image")
+img(:src="src" :alt="alt" ref="image")
 </template>
 
 <script lang="js">
@@ -26,3 +26,8 @@ export default defineComponent({
   },
 })
 </script>
+<style scoped>
+    img {
+      width: 100%;
+    }
+</style
