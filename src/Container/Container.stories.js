@@ -6,7 +6,15 @@ export default {
   tags: ['autodocs'],
 }
 export const Default = {
-  args: {
-    text: 'Container',
-  },
+  render: () => ({
+    components: { Container},
+    template: `
+      <Container>
+        <div style="background-color: #f0f0f0;">
+            <h2>Container Content</h2>
+            <p>This is some content inside the container.</p>
+        </div>
+      </Container>
+    `,
+  }),
 };

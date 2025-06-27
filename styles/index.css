@@ -1,5 +1,8 @@
 :root {
   /* BUTTONS */
+  --button-padding: 0.5rem 1rem;
+  --button-transition: background-color 0.2s ease-in-out;
+  --button-border: none;
   /* Danger */
   --color-danger: hsl(0, 84%, 58%);
   --color-danger-text: hsl(0, 0%, 100%);
@@ -96,4 +99,7 @@
   --border-radius-base: 0.25rem;
   --border-radius-big: 0.25rem;
   --border-radius-round: 50%;
+  /* CONTAINER */
+  --container-max-width: 1200px;
+  --container-marging: 0 auto;
 }

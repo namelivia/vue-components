@@ -12,7 +12,7 @@ export default defineComponent({
 
 <style scoped>
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: var(--container-max-width);
+  margin: var(--container-margin);
 }
 </style>

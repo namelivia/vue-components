@@ -18,11 +18,11 @@ export default defineComponent({
   background-color: var(--color-reset);
   color: var(--color-reset-text);
   font-weight: var(--font-weight-bold);
-  padding: 0.5rem 1rem;
+  padding: var(--button-padding);
   border-radius: var(--border-radius-base);
-  border: none;
+  border: var(--button-border);
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: var(--button-transition);
 }
 
 .reset-button:hover {
