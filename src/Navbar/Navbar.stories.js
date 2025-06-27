@@ -8,16 +8,16 @@ export default {
 export const Default = {
   args: {
     links: [
-        { name: 'Home', href: '/' },
-        { name: 'About', href: '/about' },
-        { name: 'Contact', href: '/contact' },
+        { text: 'Home', href: '/' },
+        { text: 'About', href: '/about' },
+        { text: 'Contact', href: '/contact' },
     ],
     locale: 'en',
     currentUserEmail: 'foo@bar.com',
     currentUserName: 'Foo Bar',
-    currentUserPicture: 'https://example.com/avatar.jpg',
+    currentUserPicture: 'https://picsum.photos/128/128',
     title: 'My Application',
-    imageBig: 'https://example.com/logo-big.png',
-    imageSmall: 'https://example.com/logo-small.png',
+    imageBig: 'https://picsum.photos/640/480',
+    imageSmall: 'https://picsum.photos/128/128',
   },
 };

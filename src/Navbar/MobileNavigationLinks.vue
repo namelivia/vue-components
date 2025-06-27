@@ -1,14 +1,14 @@
 <template lang="pug">
 transition(
-  enter-active-class="transition-all"
-  leave-active-class="transition-all"
-  enter-class="opacity-0 scale-70"
-  enter-to-class="opacity-100 scale-100"
-  leave-class="opacity-100 scale-100"
-  leave-to-class="opacity-0 scale-70"
+  enter-active-class="fade-scale-enter-active"
+  leave-active-class="fade-scale-leave-active"
+  enter-from-class="fade-scale-enter-from"
+  enter-to-class="fade-scale-enter-to"
+  leave-from-class="fade-scale-leave-from"
+  leave-to-class="fade-scale-leave-to"
 )
-  div(id="mobile-menu" class="sm:hidden" v-if="open")
-    div(class="px-2 pt-2 pb-3 space-y-1")
+  div(id="mobile-menu" v-if="open")
+    div(class="menu-panel")
       mobile-navigation-link(
         v-for="link in links"
         :key="link.id"
@@ -36,3 +36,38 @@ export default defineComponent({
   },
 })
 </script>
+<style scoped>
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+  transition: all 200ms ease;
+}
+
+.fade-scale-enter-from,
+.fade-scale-leave-to {
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.fade-scale-enter-to,
+.fade-scale-leave-from {
+  opacity: 1;
+  transform: scale(1);
+}
+#mobile-menu {
+  display: block;
+}
+.menu-panel {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+@media (min-width: 640px) {
+  #mobile-menu {
+    display: none;
+  }
+}
+</style>

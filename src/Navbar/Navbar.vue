@@ -1,11 +1,11 @@
 <template lang="pug">
-nav(class="bg-gray-800")
-  div(class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8")
-    div(class="relative flex items-center justify-between h-16")
-      div(class="absolute inset-y-0 left-0 flex items-center sm:hidden")
+nav(class="navbar")
+  div(class="navbar-container")
+    div(class="flex-header")
+      div(class="menu-toggle")
         mobile-menu-button(@click="onMobileMenuClick" :open="mobileMenuOpen")
       div(
-        class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start"
+        class="title-container"
       )
         navbar-title(href="/" :title="title" :imageBig="imageBig" :imageSmall="imageSmall")
         navigation-links(:links="links")
@@ -72,3 +72,61 @@ export default defineComponent({
   }
 })
 </script>
+<style scoped>
+.navbar {
+  background-color: #1f2937;
+}
+
+.navbar-container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.flex-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.title-container {
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .navbar-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .title-container {
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+</style>

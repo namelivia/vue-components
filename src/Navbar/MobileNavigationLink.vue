@@ -20,10 +20,38 @@ export default defineComponent({
   computed: {
     linkClass: function () {
       if (this.current) {
-        return 'bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium'
+        return 'current-link'
       }
-      return 'text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium'
+      return 'regular-link'
     },
   },
 })
 </script>
+<style scoped>
+.current-link {
+  background-color: #111827;
+  color: #ffffff;
+  display: block;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.regular-link {
+  color: #d1d5db;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.regular-link:hover {
+  background-color: #374151;
+  color: #ffffff;
+}
+</style>

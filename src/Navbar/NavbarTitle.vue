@@ -1,12 +1,12 @@
 <template lang="pug">
-a(:href="href" class="flex-shrink-0 flex items-center")
+a(:href="href" class="title-container")
   img(
-    class="block lg:hidden h-8 w-auto"
+    class="logo-small"
     :src="imageSmall"
     :alt="title"
   )
   img(
-    class="hidden lg:block h-8 w-auto"
+    class="logo-big"
     :src="imageBig"
     :alt="title"
   )
@@ -31,3 +31,33 @@ export default defineComponent({
   }
 })
 </script>
+<style scoped>
+.title-container {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo-small {
+  display: block;
+  height: 2rem;
+  width: auto;
+}
+
+.logo-big {
+  display: none;
+  height: 2rem;
+  width: auto;
+}
+
+@media (min-width: 1024px) {
+  .logo-small {
+    display: none;
+  }
+  .logo-big {
+    display: block;
+  }
+}
+
+
+</style>
