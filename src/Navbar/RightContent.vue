@@ -35,30 +35,29 @@ export default defineComponent({
 </script>
 <style scoped>
 .action-container {
-  position: absolute;       /* absolute */
-  top: 0;                   /* inset-y-0 */
+  position: absolute;
+  top: 0;
   bottom: 0;
-  right: 0;                 /* right-0 */
-  display: flex;            /* flex */
-  align-items: center;      /* items-center */
-  padding-right: 0.5rem;    /* pr-2 = 8px */
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 0.5rem;
 }
 
 .circle-image {
-  border-radius: 9999px;    /* rounded-full */
-  padding: 0.25rem;        /* p-1 = 4px */
-  height: 50px;            /* h-12 = 48px */
+  border-radius: 9999px;
+  padding: 0.25rem;
+  height: 50px;
 }
 
-/* Responsive overrides at sm breakpoint (min-width: 640px) */
 @media (min-width: 640px) {
   .action-container {
-    position: static;       /* sm:static */
-    top: auto;              /* sm:inset-auto resets top/bottom/right */
+    position: static;
+    top: auto;
     bottom: auto;
     right: auto;
-    margin-left: 1.5rem;    /* sm:ml-6 = 24px */
-    padding-right: 0;       /* sm:pr-0 */
+    margin-left: 1.5rem;
+    padding-right: 0;
   }
 }
 

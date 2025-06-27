@@ -39,35 +39,35 @@ export default defineComponent({
 <style scoped>
 .fade-scale-enter-active,
 .fade-scale-leave-active {
-  transition: all 200ms ease; /* matches transition-all */
+  transition: all 200ms ease;
 }
 
 .fade-scale-enter-from,
 .fade-scale-leave-to {
-  opacity: 0;                /* opacity-0 */
-  transform: scale(0.7);     /* scale-70 */
+  opacity: 0;
+  transform: scale(0.7);
 }
 
 .fade-scale-enter-to,
 .fade-scale-leave-from {
-  opacity: 1;                /* opacity-100 */
-  transform: scale(1);       /* scale-100 */
+  opacity: 1;
+  transform: scale(1);
 }
 #mobile-menu {
   display: block;
 }
 .menu-panel {
-  padding-left: 0.5rem;     /* px-2 = 8px */
+  padding-left: 0.5rem;
   padding-right: 0.5rem;
-  padding-top: 0.5rem;      /* pt-2 = 8px */
-  padding-bottom: 0.75rem;  /* pb-3 = 12px */
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;             /* space-y-1 = 4px vertical gap */
+  gap: 0.25rem;
 }
 @media (min-width: 640px) {
   #mobile-menu {
-    display: none; /* sm:hidden */
+    display: none;
   }
 }
 </style>

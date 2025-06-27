@@ -86,27 +86,27 @@ export default defineComponent({
 }
 
 .flex-header {
-  position: relative;            /* relative */
-  display: flex;                 /* flex */
-  align-items: center;           /* items-center */
-  justify-content: space-between; /* justify-between */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 4rem;
 }
 
 .menu-toggle {
-  position: absolute;         /* absolute */
-  top: 0;                     /* inset-y-0 sets top and bottom to 0 */
+  position: absolute;
+  top: 0;
   bottom: 0;
-  left: 0;                    /* left-0 */
-  display: flex;              /* flex */
-  align-items: center;        /* items-center */
+  left: 0;
+  display: flex;
+  align-items: center;
 }
 
 .title-container {
-  flex: 1 1 0%;                /* flex-1 */
-  display: flex;              /* flex */
-  align-items: center;        /* items-center */
-  justify-content: center;    /* justify-center */
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 640px) {
@@ -115,10 +115,10 @@ export default defineComponent({
     padding-right: 1.5rem;
   }
   .menu-toggle {
-    display: none; /* Hide menu toggle on larger screens */
+    display: none;
   }
   .title-container {
-    align-items: stretch; /* stretch */
+    align-items: stretch;
     justify-content: flex-start;
   }
 }

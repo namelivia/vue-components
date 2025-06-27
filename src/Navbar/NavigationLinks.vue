@@ -26,18 +26,18 @@ export default defineComponent({
 </script>
 <style scoped>
 .links-container {
-  display: none;             /* hidden */
+  display: none;
 }
 
 .links-wrapper {
-  display: flex;             /* flex */
-  gap: 1rem;                 /* space-x-4 = 16px horizontal gap between children */
+  display: flex;
+  gap: 1rem;
 }
 
-@media (min-width: 640px) {  /* sm:block and sm:ml-6 */
+@media (min-width: 640px) {
   .links-container {
     display: block;
-    margin-left: 1.5rem;     /* ml-6 = 24px */
+    margin-left: 1.5rem;
   }
 }
 </style>

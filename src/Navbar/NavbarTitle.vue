@@ -33,24 +33,24 @@ export default defineComponent({
 </script>
 <style scoped>
 .title-container {
-  flex-shrink: 0;             /* flex-shrink-0 */
-  display: flex;              /* flex */
-  align-items: center;        /* items-center */
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
 .logo-small {
-  display: block;        /* block */
-  height: 2rem;          /* h-8 = 32px */
-  width: auto;           /* w-auto */
+  display: block;
+  height: 2rem;
+  width: auto;
 }
 
 .logo-big {
-  display: none;         /* hidden */
-  height: 2rem;          /* h-8 = 32px */
-  width: auto;           /* w-auto */
+  display: none;
+  height: 2rem;
+  width: auto;
 }
 
-@media (min-width: 1024px) { /* lg:hidden */
+@media (min-width: 1024px) {
   .logo-small {
     display: none;
   }
