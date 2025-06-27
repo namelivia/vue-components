@@ -8,9 +8,9 @@ export default {
 export const Default = {
   args: {
     links: [
-        { name: 'Home', href: '/' },
-        { name: 'About', href: '/about' },
-        { name: 'Contact', href: '/contact' },
+        { text: 'Home', href: '/' },
+        { text: 'About', href: '/about' },
+        { text: 'Contact', href: '/contact' },
     ],
     locale: 'en',
     currentUserEmail: 'foo@bar.com',
