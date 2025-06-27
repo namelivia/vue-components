@@ -1,6 +1,6 @@
 <template lang="pug">
-div(class="hidden sm:block sm:ml-6")
-  div(class="flex space-x-4")
+div(class="links-container")
+  div(class="links-wrapper")
     navigation-link(
       v-for="link in links"
       :key="link.id"
@@ -24,3 +24,20 @@ export default defineComponent({
   },
 })
 </script>
+<style scoped>
+.links-container {
+  display: none;             /* hidden */
+}
+
+.links-wrapper {
+  display: flex;             /* flex */
+  gap: 1rem;                 /* space-x-4 = 16px horizontal gap between children */
+}
+
+@media (min-width: 640px) {  /* sm:block and sm:ml-6 */
+  .links-container {
+    display: block;
+    margin-left: 1.5rem;     /* ml-6 = 24px */
+  }
+}
+</style>

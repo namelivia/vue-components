@@ -1,10 +1,9 @@
 <template lang="pug">
 div(
-  class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
+  class="action-container"
 )
   img(
-    class="rounded-full p-1"
-    style="height: 50px;"
+    class="circle-image"
     :src="currentUserPicture"
     :alt="avatarAlt"
   )
@@ -34,3 +33,33 @@ export default defineComponent({
   },
 })
 </script>
+<style scoped>
+.action-container {
+  position: absolute;       /* absolute */
+  top: 0;                   /* inset-y-0 */
+  bottom: 0;
+  right: 0;                 /* right-0 */
+  display: flex;            /* flex */
+  align-items: center;      /* items-center */
+  padding-right: 0.5rem;    /* pr-2 = 8px */
+}
+
+.circle-image {
+  border-radius: 9999px;    /* rounded-full */
+  padding: 0.25rem;        /* p-1 = 4px */
+  height: 50px;            /* h-12 = 48px */
+}
+
+/* Responsive overrides at sm breakpoint (min-width: 640px) */
+@media (min-width: 640px) {
+  .action-container {
+    position: static;       /* sm:static */
+    top: auto;              /* sm:inset-auto resets top/bottom/right */
+    bottom: auto;
+    right: auto;
+    margin-left: 1.5rem;    /* sm:ml-6 = 24px */
+    padding-right: 0;       /* sm:pr-0 */
+  }
+}
+
+</style>

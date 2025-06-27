@@ -15,9 +15,9 @@ export const Default = {
     locale: 'en',
     currentUserEmail: 'foo@bar.com',
     currentUserName: 'Foo Bar',
-    currentUserPicture: 'https://example.com/avatar.jpg',
+    currentUserPicture: 'https://picsum.photos/128/128',
     title: 'My Application',
-    imageBig: 'https://example.com/logo-big.png',
-    imageSmall: 'https://example.com/logo-small.png',
+    imageBig: 'https://picsum.photos/640/480',
+    imageSmall: 'https://picsum.photos/128/128',
   },
 };
