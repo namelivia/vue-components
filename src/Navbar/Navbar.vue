@@ -74,7 +74,6 @@ export default defineComponent({
 </script>
 <style scoped>
 .navbar {
-  background-color: #1f2937;
 }
 
 .navbar-container {
@@ -83,6 +82,7 @@ export default defineComponent({
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  background-color: #1f2937;
 }
 
 .flex-header {

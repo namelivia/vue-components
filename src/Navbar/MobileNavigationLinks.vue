@@ -44,14 +44,14 @@ export default defineComponent({
 
 .fade-scale-enter-from,
 .fade-scale-leave-to {
-  opacity: 0;
-  transform: scale(0.7);
+  transform: scaleY(0);
+  transform-origin: top;
 }
 
 .fade-scale-enter-to,
 .fade-scale-leave-from {
-  opacity: 1;
-  transform: scale(1);
+  transform: scaleY(1);
+  transform-origin: top;
 }
 #mobile-menu {
   display: block;
@@ -64,6 +64,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  background-color: #1f2937;
 }
 @media (min-width: 640px) {
   #mobile-menu {
