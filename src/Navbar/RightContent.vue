@@ -50,6 +50,7 @@ export default defineComponent({
   border-radius: 9999px;
   padding: 0.25rem;
   height: 50px;
+  width: 50px;
 }
 
 @media (min-width: 640px) {
