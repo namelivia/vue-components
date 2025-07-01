@@ -1,5 +1,5 @@
 <template lang="pug">
-a(:href="href" :class="linkClass" aria-current="page")
+a(:href="linkDestination" :class="linkClass" aria-current="page")
   | {{ text }}
 </template>
 <script lang="js">
@@ -24,34 +24,37 @@ export default defineComponent({
       }
       return 'regular-link'
     },
+    linkDestination: function () {
+      return this.current ? '#' : this.href
+    },
   },
 })
 </script>
 <style scoped>
 .current-link {
-  background-color: #111827;
-  color: #ffffff;
+  background-color: var(--color-navbar-current-background);
+  color: var(--color-navbar-text);
   display: block;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 0.375rem;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: var(--font-size-navbar);
+  text-decoration: none;
+  cursor: default;
 }
 .regular-link {
-  color: #d1d5db;
+  color: var(--color-navbar-text);
   display: block;
   padding: 0.5rem 0.75rem;
   border-radius: 0.375rem;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: var(--font-size-navbar);
   transition: background-color 0.2s ease, color 0.2s ease;
+  text-decoration: none;
 }
 
 .regular-link:hover {
-  background-color: #374151;
-  color: #ffffff;
+  background-color: var(--color-navbar-link-background);
 }
 </style>

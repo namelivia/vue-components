@@ -14,6 +14,7 @@ transition(
         :key="link.id"
         :href="link.href"
         :text="link.text"
+        :current="link.current"
       )
 </template>
 <script lang="js">
@@ -64,7 +65,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  background-color: #1f2937;
+  background-color: var(--color-navbar-background);
 }
 @media (min-width: 640px) {
   #mobile-menu {

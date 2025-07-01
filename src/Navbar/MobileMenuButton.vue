@@ -45,21 +45,11 @@ export default defineComponent({
   justify-content: center;
   padding: 0.5rem;
   border-radius: var(--border-radius-big);
-  color: var(--color-menu-button);
+  color: var(--color-navbar-text);
   background-color: transparent;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   border: none;
   cursor: pointer;
-}
-
-.menu-button:hover {
-  color: var(--color-menu-button-text-hover);
-  background-color: var(--color-menu-button-hover);
-}
-
-.menu-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px var(--color-menu-button-shadow-focus);
 }
 
 .menu-icon {

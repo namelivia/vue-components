@@ -6,6 +6,7 @@ div(class="links-container")
       :key="link.id"
       :href="link.href"
       :text="link.text"
+      :current="link.current"
     )
 </template>
 <script lang="js">

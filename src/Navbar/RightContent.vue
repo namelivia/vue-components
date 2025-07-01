@@ -42,6 +42,8 @@ export default defineComponent({
   display: flex;
   align-items: center;
   padding-right: 0.5rem;
+  color: var(--color-navbar-text);
+  font-size: var(--font-size-navbar);
 }
 
 .circle-image {
