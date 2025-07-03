@@ -1,6 +1,6 @@
 {
   "name": "@namelivia/vue-components",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "scripts": {
