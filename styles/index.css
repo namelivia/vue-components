@@ -24,6 +24,7 @@
   --color-regular: hsl(210, 100%, 53%);
   --color-regular-text: hsl(0, 0%, 100%);
   --color-regular-hover: hsl(210, 100%, 46%);
+  --color-regular-disabled: hsl(210, 91%, 70%);
   /* SELECTOR */
   --color-selector-label: hsl(210, 4%, 39%);
   --color-selector-text: hsl(210, 4%, 39%);
