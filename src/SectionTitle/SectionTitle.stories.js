@@ -1,4 +1,4 @@
-import SectionTitle from './SectionTitle.vue';
+import SectionTitle from './SectionTitle.vue'
 
 export default {
   title: 'SectionTitle',
@@ -9,4 +9,4 @@ export const Default = {
   args: {
     text: 'Title',
   },
-};
+}

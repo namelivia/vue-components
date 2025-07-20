@@ -1,4 +1,4 @@
-import ImageInput from './ImageInput.vue';
+import ImageInput from './ImageInput.vue'
 
 export default {
   title: 'Inputs/ImageInput',
@@ -13,4 +13,4 @@ export const Default = {
     dropPlaceholder: 'Drop an image here or click to select',
     label: 'Image Input',
   },
-};
+}

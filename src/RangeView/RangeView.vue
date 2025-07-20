@@ -8,13 +8,13 @@ div.ranges-editor
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "RangeView",
+  name: 'RangeView',
   props: {
     ranges: Array,
   },
-});
+})
 </script>
 
 <style scoped>
@@ -24,24 +24,24 @@ export default defineComponent({
   cursor: pointer;
 }
 .range {
-    min-width: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  min-width: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .labels {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 .gap {
-    height: 10px;
-    width: auto;
-    background-color: red;
-    border: 1px solid black;
+  height: 10px;
+  width: auto;
+  background-color: red;
+  border: 1px solid black;
 }
 .label {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 </style>

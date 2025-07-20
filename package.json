@@ -7,6 +7,7 @@
     "build": "rollup -c --bundleConfigAsCjs",
     "cypress": "cypress open --component testing",
     "storybook": "storybook dev -p 6006",
+    "prettier": "prettier",
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
@@ -20,6 +21,7 @@
     "@vitejs/plugin-vue": "^5.2.4",
     "cypress": "^14.4.0",
     "pug": "^3.0.3",
+    "prettier": "^3.6.2",
     "rollup": "^4.41.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",

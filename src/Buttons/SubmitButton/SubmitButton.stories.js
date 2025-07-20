@@ -1,13 +1,13 @@
-import SubmitButton from './SubmitButton.vue';
+import SubmitButton from './SubmitButton.vue'
 
 export default {
   title: 'Buttons/SubmitButton',
   component: SubmitButton,
-  tags: ['autodocs']
-};
+  tags: ['autodocs'],
+}
 
 export const Default = {
   args: {
     text: 'Submit Button',
   },
-};
+}

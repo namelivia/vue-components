@@ -1,4 +1,4 @@
-import Loading from './Loading.vue';
+import Loading from './Loading.vue'
 
 export default {
   title: 'Loading',
@@ -9,4 +9,4 @@ export const Default = {
   args: {
     text: 'Loading',
   },
-};
+}

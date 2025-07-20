@@ -1,4 +1,4 @@
-import Badge from './Badge.vue';
+import Badge from './Badge.vue'
 
 export default {
   title: 'Badge',
@@ -9,4 +9,4 @@ export const Default = {
   args: {
     text: 'Badge',
   },
-};
+}

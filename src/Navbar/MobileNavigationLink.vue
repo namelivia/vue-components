@@ -5,7 +5,7 @@ a(:href="linkDestination" :class="linkClass" aria-current="page")
 <script lang="js">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "MobileNavigationLink",
+  name: 'MobileNavigationLink',
   props: {
     text: {
       type: String,
@@ -50,7 +50,9 @@ export default defineComponent({
   padding: 0.5rem 0.75rem;
   border-radius: 0.375rem;
   font-size: var(--font-size-navbar);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
   text-decoration: none;
 }
 

@@ -5,11 +5,11 @@ describe('<Card />', () => {
     cy.mount(Card, {
       props: {
         image: 'test.jpg',
-        title: 'Test Title'
+        title: 'Test Title',
       },
       slots: {
-        default: () => 'Test Card Content'
-      }
+        default: () => 'Test Card Content',
+      },
     })
 
     cy.get('.card-container').should('exist')
@@ -21,7 +21,7 @@ describe('<Card />', () => {
     const title = 'Card Title'
 
     cy.mount(Card, {
-      props: { image, title }
+      props: { image, title },
     })
 
     cy.get('img')
@@ -32,8 +32,8 @@ describe('<Card />', () => {
   it('renders the title correctly in card-body', () => {
     cy.mount(Card, {
       props: {
-        title: 'Expected Title'
-      }
+        title: 'Expected Title',
+      },
     })
 
     cy.get('.card-body').should('contain.text', 'Expected Title')
@@ -42,11 +42,10 @@ describe('<Card />', () => {
   it('does not render when dismissed is true', () => {
     cy.mount(Card, {
       props: {
-        dismissed: true
-      }
+        dismissed: true,
+      },
     })
 
     cy.get('.card-container').should('not.exist')
   })
 })
-

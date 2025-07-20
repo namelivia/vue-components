@@ -5,7 +5,7 @@ a(:href="linkDestination" :class="linkClass" aria-current="page")
 <script lang="js">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "NavigationLink",
+  name: 'NavigationLink',
   props: {
     text: {
       type: String,
@@ -52,7 +52,9 @@ export default defineComponent({
   padding-bottom: 0.5rem;
   border-radius: 0.375rem;
   font-size: var(--font-size-navbar);
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
   text-decoration: none;
 }
 

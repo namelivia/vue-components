@@ -22,7 +22,7 @@ import MobileNavigationLink from './MobileNavigationLink.vue'
 
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "MobileNavigationLinks",
+  name: 'MobileNavigationLinks',
   components: {
     MobileNavigationLink: MobileNavigationLink,
   },

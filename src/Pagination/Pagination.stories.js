@@ -1,4 +1,4 @@
-import Pagination from './Pagination.vue';
+import Pagination from './Pagination.vue'
 
 export default {
   title: 'Pagination',
@@ -13,4 +13,4 @@ export const Default = {
     previousLink: '#',
     nextLink: '#',
   },
-};
+}

@@ -26,7 +26,7 @@ import MobileMenuButton from './MobileMenuButton.vue'
 
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Navbar",
+  name: 'Navbar',
   components: {
     NavbarTitle: NavbarTitle,
     NavigationLinks: NavigationLinks,
@@ -69,7 +69,7 @@ export default defineComponent({
     onMobileMenuClick() {
       this.mobileMenuOpen = !this.mobileMenuOpen
     },
-  }
+  },
 })
 </script>
 <style scoped>

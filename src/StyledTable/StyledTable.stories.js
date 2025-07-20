@@ -1,4 +1,4 @@
-import StyledTable from './StyledTable.vue';
+import StyledTable from './StyledTable.vue'
 
 export default {
   title: 'StyledTable',
@@ -7,4 +7,4 @@ export default {
 }
 export const Default = {
   args: {},
-};
+}

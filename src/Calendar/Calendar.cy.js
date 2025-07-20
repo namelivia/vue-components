@@ -1,8 +1,8 @@
-import Badge from './Badge.vue'
+import Calendar from './Calendar.vue'
 
-describe('<Badge />', () => {
+describe('<Calendar />', () => {
   it('should properly render', () => {
-    cy.mount(Badge, {
+    cy.mount(Calendar, {
       props: {
         text: 'Name',
       },

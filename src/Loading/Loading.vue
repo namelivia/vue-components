@@ -8,13 +8,13 @@ div
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Loading",
+  name: 'Loading',
   props: {
     text: String,
   },
-});
+})
 </script>
 
 <style scoped>
@@ -51,7 +51,8 @@ export default defineComponent({
 }
 
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {

@@ -29,9 +29,9 @@ div(class="selector-container")
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Selector",
+  name: 'Selector',
   props: {
     id: {
       type: String,
@@ -52,24 +52,24 @@ export default defineComponent({
   data() {
     return {
       selected: '',
-    };
+    }
   },
   watch: {
     initialValue: {
       immediate: true,
       handler: function (newSelectedValue) {
-        if (newSelectedValue !== "" && newSelectedValue !== undefined) {
-          this.selected = newSelectedValue;
+        if (newSelectedValue !== '' && newSelectedValue !== undefined) {
+          this.selected = newSelectedValue
         }
       },
     },
     options: {
       immediate: true,
       handler: function (newOptions) {
-        const enabledOptions = newOptions.filter((option) => !option.disabled);
+        const enabledOptions = newOptions.filter((option) => !option.disabled)
         if (enabledOptions.length === 1) {
-          this.selected = enabledOptions[0].value;
-          this.$emit('selected', this.selected);
+          this.selected = enabledOptions[0].value
+          this.$emit('selected', this.selected)
         }
       },
     },
@@ -77,10 +77,10 @@ export default defineComponent({
   emits: ['selected'],
   methods: {
     onChange() {
-      this.$emit('selected', this.selected);
+      this.$emit('selected', this.selected)
     },
   },
-});
+})
 </script>
 
 <style scoped>
@@ -110,7 +110,9 @@ export default defineComponent({
   padding-right: 2rem;
   border-radius: var(--border-radius--base);
   line-height: 1.25;
-  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition:
+    background-color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
 }
 
 .selector-field:focus {

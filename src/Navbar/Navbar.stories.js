@@ -1,4 +1,4 @@
-import Navbar from './Navbar.vue';
+import Navbar from './Navbar.vue'
 
 export default {
   title: 'Navbar',
@@ -8,9 +8,9 @@ export default {
 export const Default = {
   args: {
     links: [
-        { text: 'Home', href: '/home', current: true },
-        { text: 'About', href: '/about', current: false },
-        { text: 'Contact', href: '/contact', current: false },
+      { text: 'Home', href: '/home', current: true },
+      { text: 'About', href: '/about', current: false },
+      { text: 'Contact', href: '/contact', current: false },
     ],
     locale: 'en',
     currentUserEmail: 'foo@bar.com',
@@ -20,4 +20,4 @@ export const Default = {
     imageBig: 'https://picsum.photos/640/480',
     imageSmall: 'https://picsum.photos/128/128',
   },
-};
+}

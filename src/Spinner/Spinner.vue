@@ -5,10 +5,10 @@ div(class="spinner" role="status")
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Spinner",
-});
+  name: 'Spinner',
+})
 </script>
 
 <style scoped>

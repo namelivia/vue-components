@@ -8,18 +8,18 @@ button(
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "SubmitButton",
+  name: 'SubmitButton',
   props: {
     text: {
-        type: String,
+      type: String,
     },
     disabled: {
-        type: Boolean,
+      type: Boolean,
     },
   },
-});
+})
 </script>
 
 <style scoped>

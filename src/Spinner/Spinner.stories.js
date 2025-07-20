@@ -1,4 +1,4 @@
-import Spinner from './Spinner.vue';
+import Spinner from './Spinner.vue'
 
 export default {
   title: 'Spinner',
@@ -7,4 +7,4 @@ export default {
 }
 export const Default = {
   args: {},
-};
+}

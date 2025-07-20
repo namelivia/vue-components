@@ -1,4 +1,4 @@
-import Card from './Card.vue';
+import Card from './Card.vue'
 
 export default {
   title: 'Card',
@@ -14,7 +14,7 @@ export const Default = {
   render: (args) => ({
     components: { Card },
     setup() {
-      return { args };
+      return { args }
     },
     template: `
       <Card v-bind="args">
@@ -22,4 +22,4 @@ export const Default = {
       </Card>
     `,
   }),
-};
+}

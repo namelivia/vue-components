@@ -1,4 +1,4 @@
-import Selector from './Selector.vue';
+import Selector from './Selector.vue'
 
 export default {
   title: 'Inputs/Selector',
@@ -18,4 +18,4 @@ export const Default = {
       { value: 'option3', text: 'Option 3' },
     ],
   },
-};
+}

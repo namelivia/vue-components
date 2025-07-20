@@ -1,5 +1,5 @@
-import CardGrid from './CardGrid.vue';
-import Card from '../Card/Card.vue';
+import CardGrid from './CardGrid.vue'
+import Card from '../Card/Card.vue'
 
 export default {
   title: 'CardGrid',
@@ -23,4 +23,4 @@ export const Default = {
        </CardGrid>
     `,
   }),
-};
+}

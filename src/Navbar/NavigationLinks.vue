@@ -14,7 +14,7 @@ import NavigationLink from './NavigationLink.vue'
 
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "NavigationLinks",
+  name: 'NavigationLinks',
   components: {
     NavigationLink: NavigationLink,
   },

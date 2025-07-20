@@ -4,13 +4,13 @@ button(type="reset" class="reset-button")
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "ResetButton",
+  name: 'ResetButton',
   props: {
     text: String,
   },
-});
+})
 </script>
 
 <style scoped>
