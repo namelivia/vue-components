@@ -11,7 +11,7 @@ div(
 <script lang="js">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "RightContent",
+  name: 'RightContent',
   props: {
     locale: {
       type: String,
@@ -63,5 +63,4 @@ export default defineComponent({
     padding-right: 0;
   }
 }
-
 </style>

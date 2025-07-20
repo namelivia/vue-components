@@ -1,4 +1,4 @@
-import TextInput from './TextInput.vue';
+import TextInput from './TextInput.vue'
 
 export default {
   title: 'Inputs/TextInput',
@@ -14,4 +14,4 @@ export const Default = {
     label: 'Text Input',
     text: '',
   },
-};
+}

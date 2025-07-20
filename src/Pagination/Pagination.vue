@@ -7,10 +7,10 @@ div(class="pagination-container")
 </template>
 
 <script lang="js">
-import { default as RegularButton } from '../Buttons/RegularButton/RegularButton.vue';
-import { defineComponent } from 'vue';
+import { default as RegularButton } from '../Buttons/RegularButton/RegularButton.vue'
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Pagination",
+  name: 'Pagination',
   props: {
     previousLabel: String,
     nextLabel: String,
@@ -21,7 +21,7 @@ export default defineComponent({
   components: {
     RegularButton,
   },
-});
+})
 </script>
 
 <style scoped>

@@ -4,9 +4,9 @@ button(v-on:click="onClick" :class="cssClass" :disabled="loading")
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "RegularButton",
+  name: 'RegularButton',
   props: {
     text: String,
     loading: {
@@ -22,17 +22,17 @@ export default defineComponent({
   computed: {
     cssClass: function () {
       if (this.loading) {
-        return 'regular-button loading';
+        return 'regular-button loading'
       }
       return 'regular-button'
     },
   },
   methods: {
     onClick(evt) {
-      this.$emit('click', evt);
+      this.$emit('click', evt)
     },
   },
-});
+})
 </script>
 
 <style scoped>
@@ -60,4 +60,3 @@ export default defineComponent({
   background-color: var(--color-regular-disabled);
 }
 </style>
-

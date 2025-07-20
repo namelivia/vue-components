@@ -17,9 +17,9 @@ div(class="image-input-container")
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "ImageInput",
+  name: 'ImageInput',
   props: {
     id: {
       type: String,
@@ -43,10 +43,10 @@ export default defineComponent({
   emits: ['update'],
   methods: {
     onInput(event) {
-      this.$emit('update', event.target.files[0]);
+      this.$emit('update', event.target.files[0])
     },
   },
-});
+})
 </script>
 
 <style scoped>
@@ -71,7 +71,9 @@ export default defineComponent({
   padding: 0.5rem 0.75rem;
   color: var(--color-image-input);
   line-height: 1.25;
-  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition:
+    box-shadow 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
 }
 
 .image-input-field:focus {

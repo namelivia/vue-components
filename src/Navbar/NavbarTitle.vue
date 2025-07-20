@@ -14,7 +14,7 @@ a(:href="href" class="title-container")
 <script lang="js">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "NavbarTitle",
+  name: 'NavbarTitle',
   props: {
     href: {
       type: String,
@@ -28,7 +28,7 @@ export default defineComponent({
     imageSmall: {
       type: String,
     },
-  }
+  },
 })
 </script>
 <style scoped>
@@ -58,6 +58,4 @@ export default defineComponent({
     display: block;
   }
 }
-
-
 </style>

@@ -18,9 +18,9 @@ div(class="number-input-container")
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "NumberInput",
+  name: 'NumberInput',
   props: {
     id: {
       type: String,
@@ -50,10 +50,10 @@ export default defineComponent({
   emits: ['update'],
   methods: {
     onInput(event) {
-      this.$emit('update', event.target.value);
+      this.$emit('update', event.target.value)
     },
   },
-});
+})
 </script>
 
 <style scoped>
@@ -78,7 +78,9 @@ export default defineComponent({
   padding: 0.5rem 0.75rem;
   color: var(--color-number-input);
   line-height: 1.25;
-  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition:
+    box-shadow 0.2s ease-in-out,
+    border-color 0.2s ease-in-out;
 }
 
 .number-input-field:focus {
@@ -92,4 +94,3 @@ export default defineComponent({
   cursor: not-allowed;
 }
 </style>
-

@@ -8,7 +8,7 @@ div(class="card-body")
 <script lang="js">
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "CardBody",
+  name: 'CardBody',
   props: {
     title: String,
   },
@@ -30,4 +30,3 @@ export default defineComponent({
   font-size: var(--font-size-base);
 }
 </style>
-

@@ -1,4 +1,4 @@
-import ResetButton from './ResetButton.vue';
+import ResetButton from './ResetButton.vue'
 
 export default {
   title: 'Buttons/ResetButton',

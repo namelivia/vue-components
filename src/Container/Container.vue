@@ -4,10 +4,10 @@ div(class="container")
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Container"
-});
+  name: 'Container',
+})
 </script>
 
 <style scoped>

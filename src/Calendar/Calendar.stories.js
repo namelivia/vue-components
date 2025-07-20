@@ -1,4 +1,4 @@
-import Calendar from './Calendar.vue';
+import Calendar from './Calendar.vue'
 
 export default {
   title: 'Calendar',
@@ -9,4 +9,4 @@ export const Default = {
   args: {
     text: 'Calendar',
   },
-};
+}

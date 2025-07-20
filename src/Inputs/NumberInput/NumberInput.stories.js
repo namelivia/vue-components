@@ -1,4 +1,4 @@
-import NumberInput from './NumberInput.vue';
+import NumberInput from './NumberInput.vue'
 
 export default {
   title: 'Inputs/NumberInput',
@@ -13,7 +13,7 @@ export const Default = {
     placeholder: 'Enter a number',
     label: 'Number Input',
     amount: 0,
-    min: "0",
-    step: "1",
+    min: '0',
+    step: '1',
   },
-};
+}

@@ -10,7 +10,7 @@ import { default as CardImage } from './CardImage.vue'
 import { default as CardBody } from './CardBody.vue'
 import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Card",
+  name: 'Card',
   props: {
     image: String,
     title: String,
@@ -23,7 +23,7 @@ export default defineComponent({
     CardImage,
     CardBody,
   },
-  emits: ['width']
+  emits: ['width'],
 })
 </script>
 <style scoped>

@@ -4,19 +4,19 @@ button(v-on:click="onClick" class="secondary-button")
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "SecondaryButton",
+  name: 'SecondaryButton',
   props: {
     text: String,
   },
   emits: ['click'],
   methods: {
     onClick(evt) {
-      this.$emit('click', evt);
+      this.$emit('click', evt)
     },
   },
-});
+})
 </script>
 
 <style scoped>

@@ -1,4 +1,4 @@
-import DangerButton from './DangerButton.vue';
+import DangerButton from './DangerButton.vue'
 
 export default {
   title: 'Buttons/DangerButton',
@@ -9,4 +9,4 @@ export const Default = {
   args: {
     text: 'Danger Button',
   },
-};
+}

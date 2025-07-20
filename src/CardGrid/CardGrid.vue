@@ -3,10 +3,10 @@ div(class="card-grid")
   slot
 </template>
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "CardGrid"
-});
+  name: 'CardGrid',
+})
 </script>
 <style scoped>
 .card-grid {

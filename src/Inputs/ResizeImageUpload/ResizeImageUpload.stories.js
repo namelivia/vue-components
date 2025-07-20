@@ -1,4 +1,4 @@
-import ResizeImageUpload from './ResizeImageUpload.vue';
+import ResizeImageUpload from './ResizeImageUpload.vue'
 
 export default {
   title: 'Inputs/ResizeImageUpload',
@@ -13,4 +13,4 @@ export const Default = {
     dropPlaceholder: 'Drop an image here or click to select',
     label: 'Image Input',
   },
-};
+}

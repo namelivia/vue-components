@@ -1,4 +1,4 @@
-import Container from './Container.vue';
+import Container from './Container.vue'
 
 export default {
   title: 'Container',
@@ -7,7 +7,7 @@ export default {
 }
 export const Default = {
   render: () => ({
-    components: { Container},
+    components: { Container },
     template: `
       <Container>
         <div style="background-color: #f0f0f0;">
@@ -17,4 +17,4 @@ export const Default = {
       </Container>
     `,
   }),
-};
+}

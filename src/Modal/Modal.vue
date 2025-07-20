@@ -8,22 +8,22 @@ div(class="modal-overlay" v-if="open")
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "Modal",
+  name: 'Modal',
   emits: ['cancel', 'confirm'],
   props: {
     open: Boolean,
   },
   methods: {
     onCancel(evt) {
-      this.$emit('cancel', evt);
+      this.$emit('cancel', evt)
     },
     onConfirm(evt) {
-      this.$emit('confirm', evt);
+      this.$emit('confirm', evt)
     },
   },
-});
+})
 </script>
 
 <style scoped>

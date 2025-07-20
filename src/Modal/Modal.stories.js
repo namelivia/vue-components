@@ -1,4 +1,4 @@
-import Modal from './Modal.vue';
+import Modal from './Modal.vue'
 
 export default {
   title: 'Modal',
@@ -7,6 +7,6 @@ export default {
 }
 export const Default = {
   args: {
-      open: true,
+    open: true,
   },
-};
+}

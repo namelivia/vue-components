@@ -13,9 +13,9 @@ div(class="checkbox-container")
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "CheckBoxInput",
+  name: 'CheckBoxInput',
   props: {
     id: {
       type: String,
@@ -36,10 +36,10 @@ export default defineComponent({
   emits: ['update'],
   methods: {
     onInput(event) {
-      this.$emit('update', event.target.value);
+      this.$emit('update', event.target.value)
     },
   },
-});
+})
 </script>
 
 <style scoped>
@@ -47,7 +47,7 @@ export default defineComponent({
   margin-bottom: 1rem;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   margin-right: 0.5rem;
 }
 

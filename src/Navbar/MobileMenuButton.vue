@@ -20,9 +20,9 @@ button(
 </template>
 
 <script lang="js">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 export default defineComponent({
-  name: "MobileMenuButton",
+  name: 'MobileMenuButton',
   props: {
     open: {
       type: Boolean,
@@ -32,10 +32,10 @@ export default defineComponent({
   emits: ['click'],
   methods: {
     onClick(evt) {
-      this.$emit('click', evt);
+      this.$emit('click', evt)
     },
   },
-});
+})
 </script>
 
 <style scoped>
@@ -47,7 +47,9 @@ export default defineComponent({
   border-radius: var(--border-radius-big);
   color: var(--color-navbar-text);
   background-color: transparent;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
   border: none;
   cursor: pointer;
 }
@@ -58,4 +60,3 @@ export default defineComponent({
   width: 1.5rem;
 }
 </style>
-
